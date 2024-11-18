@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Lunchpad UI</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+
+        <img class="logo" src="./assets/logo.png" alt="">
+        <button>Portals</button>
+      </div>
+      <div class="main">
+        <div class="left">
+          <h1>Take your Assessment!</h1>
+          <p>Register your job assessment in just 10 minutes. Please complete the following steps to register with us.</p>
+          <img class="main-img" src="./assets/main.png" alt="">
+        </div>
+        <div class="right">
+          <form action="">
+            <div class="sign-container">
+            <a href="#" class="sign-up">SIGN UP</a>
+            <a href="#" class="sign-in">SIGN IN</a>
+            </div>
+            <div class="form-text">
+
+              <div class="text-lg">
+                <div class="text">
+                  <label for="">Email *</label>
+                  <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="text">
+                  <label for="">CNIC/Passport No/SSN *</label>
+                  <input type="text" placeholder="Enter your CNIC">
+                </div>
+              </div>
+
+              <div class="text-lg">
+                <div class="text">
+                  <label for="">Enter Password *</label>
+                  <input type="text" placeholder="Enter 8 digit password">
+                </div>
+                <div class="text">
+                  <label for="">Confirm Password *</label>
+                  <input type="text" placeholder="Enter 8 digit password">
+                </div>
+              </div>
+              
+              <div class="text-lg">
+                <div class="text">
+                  <label for="">Mobile No *</label>
+                  <input type="text" placeholder="123456789">
+                </div>
+                <div class="text text-country">
+                  <label for="">Country *</label>
+                  <select id="country" class="country" name="country">
+                    <option class="select" value="" disabled selected></option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    
+                </select>
+
+               <p class="select-text">Select</p>
+                </div>
+              </div>
+              
+              <div class="text-lg">
+                <div class="text text-country">
+                  <label for="">Province *</label>
+                  <select id="country" class="country" name="country">
+                    <option class="select" value="" disabled selected></option>
+                    <option value="us">Khyber Pakhtunkhwa</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                   
+                </select>
+
+               <p class="select-text">Select</p>
+                </div>
+                <div class="text text-country">
+                  <label for="">City *</label>
+                  <select id="country" class="country" name="country">
+                    <option class="select" value="" disabled selected></option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                  
+                </select>
+
+               <p class="select-text">Select</p>
+                </div>
+              </div>
+              
+              <div class="text-lg">
+                <div class="text text-resume">
+                  <label for="">Resume/CV</label>
+                  <input class="file" type="file" placeholder="..">
+                  <p class="select-text">No file Choosen.Upload file</p>
+                </div>
+              </div>
+              <button class="login-btn">Register</button>
+            </div>
+          </form> 
+      <!--End SingUp Section -->
+          <!-- Sign In Section -->
+          <!-- <form action="">
+            <div class="sign-container">
+              <a href="#" class="sign-up">SIGN UP</a>
+              <a href="#" class="sign-in sign-btn">SIGN IN</a>
+              </div>
+            <div class="form-text">
+              <div class="text">
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter your email">
+              </div>
+              <div class="text">
+                <label for="">Enter Password</label>
+                <input type="text" placeholder="Enter your password">
+              </div>
+              <div class="forget-div">
+                <div>
+                  <p>Forgot Password?</p>
+                </div>
+              </div>
+              <button class="login-btn">Login</button>
+            </div>
+          </form> -->
+<!-- End Sign In Section -->
+
+        </div>
+      </div>
+      <footer>
+        <a href="https://www.botnosticsolutions.ai/">
+          &#169; <span id="curent_year"></span> Botnostic Solutions (PVT) Ltd, All Rights Reserved
+        </a>
+      </footer>
+      <script>
+        const d = new Date();
+        let Current_Year = d.getFullYear();
+        document.getElementById("curent_year").innerHTML = Current_Year;
+      </script>
+</body>
+</html>
